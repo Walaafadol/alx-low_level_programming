@@ -13,10 +13,14 @@ for (b = '0'; b <= '9'; b++)
 {
 putchar(a);
 putchar(b);
-}
+if ((a != '9') || (a == '9' && b != '9'))
+{
 putchar(',');
 putchar(' ');
 }
+}
+}
+putchar('\n');
 return (0);
 }
 
