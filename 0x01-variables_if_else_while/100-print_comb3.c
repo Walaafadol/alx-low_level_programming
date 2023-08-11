@@ -9,9 +9,9 @@ int a;
 int b;
 for (a = '0'; a <= '9'; a++)
 {
-putchar(a);
 for (b = '0'; b <= '9'; b++)
 {
+putchar(a);
 putchar(b);
 }
 putchar(',');
