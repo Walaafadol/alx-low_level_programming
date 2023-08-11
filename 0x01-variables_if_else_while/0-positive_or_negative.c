@@ -2,7 +2,7 @@
 #include <time.h>
 /**
 *main - aprogram that print results
-* Return :0 (sussess)
+*Return:0 (sussess)
 */
 int main(void)
 {
