@@ -9,7 +9,6 @@ int  a = 0;
 int b;
 for (a = 0; a <= 98; a++)
 {
-b = a;
 for (b = 0; b <= 99; b++)
 {
 if (b != a)
