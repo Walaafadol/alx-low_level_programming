@@ -12,7 +12,7 @@ for (a = 0; a <= 99; a++)
 b = a;
 for (b = 0; b <= 99; b++)
 {
-if (a != b)
+if (b != a)
 {
 putchar((a / 10) + 48);
 putchar((a % 10) + 48);
