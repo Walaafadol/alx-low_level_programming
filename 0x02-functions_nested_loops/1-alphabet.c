@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- * function  print_alphabet print_alphabet
- */
+* print_alphabet - check the code
+* Return: void
+*/
 void print_alphabet(void)
 {
 char c;
