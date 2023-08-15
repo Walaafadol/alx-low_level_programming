@@ -3,15 +3,18 @@
 /**
  * _abs - check the code.
  * Return:1 if c is lowercase
- * int _abs :  is parameter
+ * @a :  is parameter
  */
 int _abs(int a)
 {
 if (a < 0)
 {
-_putchar(-a);
+int abs;
+abs = a * -1;
+return (abs);
 }
 else
 {
-_putchar(a);
+return(a);
+}
 }
