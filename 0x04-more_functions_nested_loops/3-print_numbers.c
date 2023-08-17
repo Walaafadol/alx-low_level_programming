@@ -2,7 +2,7 @@
 
 /**
  * print_numbers - check the code
- * @c :parameter
+ * void :parameter
  * Return: Always 0.
  */
 void print_numbers(void)
