@@ -2,7 +2,6 @@
 
 /**
  * print_most_numbers - check the code
- * @c:parameter
  * void
  * Return: Always 0.
  */
