@@ -13,7 +13,7 @@ _putchar('\n');
 }
 else
 {
-int m ,u;
+int m, u;
 for (m = 0; m < n; m++)
 {
 for (u = 0; u < m; u++)
