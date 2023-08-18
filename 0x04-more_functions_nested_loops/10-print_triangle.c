@@ -14,7 +14,7 @@ _putchar('\n');
 else
 {
 int c, b, z;
-for ( c = 0; c < size; c++)
+for (c = 0; c < size; c++)
 {
 for (b = size - c; b > 1 ; b--)
 {
