@@ -11,4 +11,5 @@ for (i = 0; i != '\0'; i++)
 {
 _putchar(str[i]);
 }
+_putcar('\n');
 }
