@@ -9,10 +9,10 @@
 void reverse_array(int *a, int n)
 {
 int i, j, counter;
-for (i = 0; i < n && a[i] != '\0'; i++)
-counter++;
-for (j = counter; a[j] != '0'; j--)
+for (i = 0, j = (n - 1); i < j; i++, j--)
 {
-printf("%d", a[j]);
+counter = a[i];
+a[i] = a[j];
+a[j] = counter;
 }
 }
