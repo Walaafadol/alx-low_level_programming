@@ -1,22 +1,29 @@
 #include "main.h"
 /**
 *cap_string- check the code
-*@src:parameter
+*@entry:parameter
 * Return: Always 0.
 */
-char *cap_string(char *src)
+char *cap_string(char *entry)
 {
-int i;
-for (i = 0; src[i] != '\0'; i++)
+int conversion, index, count;
+char chars[] = {' ', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\t', '\n', '\0'};
+conversion = 32;
+for (index = 0; entry[index] != '\0'; index++)
 {
-if (src[i] >= 97 && src[i] <= 122)
+if (entry[index] >= index && entry[index] <= 'z')
 {
-src[i] = src[i] - 32;
+entry[index] =  entry[index] - conversion;
 }
-else
+conversion = 0;
+for (count = 0; chars[count] != '\0'; count++)
 {
-src[i] = src[i];
+if (chars[count] == entry[index])
+{
+conversion = 32;
+break;
 }
 }
-return (src);
+}
+return (entry);
 }
