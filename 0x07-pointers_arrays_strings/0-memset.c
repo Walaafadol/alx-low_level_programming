@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*_memcpy - check the code
+*_memset - check the code
 *@b:parameter
 *@n:parameter
 *@s:parameter
