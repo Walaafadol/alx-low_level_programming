@@ -1,7 +1,7 @@
 #include "main.h"
+int square(int n, int val);
 /**
 *_sqrt_recursion - check the code
-*square - check the code
 *@n:parameter
 *Return: Always 0.
 */
@@ -11,11 +11,10 @@ return (square(n, 1));
 }
 /**
 *square - check the code
-*@n:parameter
-*@val:parameter
+*@n :parameter
+*@val :parameter
 *Return: Always 0.
 */
-
 int square(int n, int val)
 {
 if (n == val * val)
