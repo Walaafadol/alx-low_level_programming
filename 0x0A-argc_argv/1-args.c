@@ -3,6 +3,7 @@
 *main - program
 *Return:0
 *@argc:parameter
+*@argv:parameter
 */
 int main(int argc, char *argv[])
 {
