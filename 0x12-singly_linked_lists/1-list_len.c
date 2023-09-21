@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-*list_len( - program
+*list_len - program
 *Return:0
 *@h:parameter
 */
