@@ -1,18 +1,22 @@
+#include "main.h"
 /**
-*main - program
+*print_binary - program
 *Return:0
 *@n:argument
 */
 void print_binary(unsigned long int n)
 {
 int bit = sizeof(n) * 8, print = 0;
-if (n && 1L << --bit)
+while (bit)
+{
+if (n & 1l << --bit)
+{
 _putchar('1');
 print++;
+}
 else if (print)
-{
-_putchar('0);
+_putchar('0');
 }
 if (!print)
-_putchar('0);
+_putchar('0');
 }
