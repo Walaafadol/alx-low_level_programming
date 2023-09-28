@@ -11,7 +11,7 @@ unsigned int xor = n ^ m;
 unsigned int count = 0;
 while (xor)
 {
-if (xor & 1lu)
+if (xor & 1ul)
 count++;
 xor = xor >> 1;
 }
