@@ -13,7 +13,7 @@ while (head)
 if (i == index)
 return (head);
 head = head->next;
-i++
+i++;
 }
 return (NULL);
 }
