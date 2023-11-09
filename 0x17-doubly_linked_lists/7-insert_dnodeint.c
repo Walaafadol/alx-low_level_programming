@@ -19,13 +19,13 @@ return (NULL);
 }
 if (tmp->next == NULL)
 return (add_dnodeint_end(h, n));
-new = malloc(sizeof(dlistint_t ));
+new = malloc(sizeof(dlistint_t));
 if (new == NULL)
 return (NULL);
 new->n = n;
 new->prev = tmp;
 new->next = tmp->next;
-tmp->next->prev= new;
+tmp->next->prev = new;
 tmp->next = new;
 return (new);
 }
