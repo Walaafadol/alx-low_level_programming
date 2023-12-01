@@ -19,7 +19,7 @@ while (tmp != NULL)
 {
 if (f == 1)
 printf(", ");
-printf("'%s' : '%s'", tmp->key, tmp->value);
+printf("'%s': '%s'", tmp->key, tmp->value);
 f = 1;
 tmp = tmp->next;
 }
