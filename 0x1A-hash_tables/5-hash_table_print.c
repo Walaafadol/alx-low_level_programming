@@ -1,29 +1,29 @@
 #include "hash_tables.h"
+
 /**
-*hash_table_print - program
+*hash_table_delete - program
 *Return:0
 *@ht:parameter
 */
-void hash_table_print(const hash_table_t *ht)
+void hash_table_delete(hash_table_t *ht)
 {
-unsigned long int i;
-hash_node_t *tmp;
-char f = 0;
-if (ht == NULL || ht->array == NULL)
+unsigned long int index;
+hash_node_t *next;
+if (ht == NULL || ht->array == NULL || ht->size == 0)
 return;
-printf("{");
 for (i = 0; i < ht->size; i++)
 {
-tmp = ht->array[i];
-while (tmp != NULL)
+while (ht->array[i] != NULL)
 {
-if (f == 1)
-printf(", ");
-printf("'%s': '%s'", tmp->key, tmp->value);
-f = 1;
-tmp = tmp->next;
+next = ht->array[i]->next;
+free(ht->array[i]->key);
+free(ht->array[i]->value);
+free(ht->array[i]);
+ht->array[i] = next;
 }
 }
-printf("}\n");
+free(ht->array);
+ht->array = NULL;
+ht->size = 0;
+free(ht);
 }
-
