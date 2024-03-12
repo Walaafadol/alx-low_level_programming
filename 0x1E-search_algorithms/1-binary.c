@@ -20,7 +20,7 @@ return (-1);
 for (left = 0, right = size - 1; right >= left;)
 {
 printf("Searching in array: ");
-for ( i = left; i < right; i++)
+for (i = left; i < right; i++)
 printf("%d, ", array[i]);
 printf("%d\n", array[i]);
 i = left + (right - left) / 2;
